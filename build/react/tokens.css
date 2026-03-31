@@ -1,0 +1,56 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-primary-100: #E3F2FD;
+  --color-primary-200: #90CAF9;
+  --color-primary-300: #42A5F5;
+  --color-primary-400: #1E88E5;
+  --color-primary-500: #1565C0;
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E0E0E0;
+  --color-neutral-300: #BDBDBD;
+  --color-neutral-400: #9E9E9E;
+  --color-neutral-500: #757575;
+  --color-neutral-600: #616161;
+  --color-neutral-700: #424242;
+  --color-neutral-800: #303030;
+  --color-neutral-900: #212121;
+  --color-neutral-1000: #000000;
+  --color-content-primary: #00ff00;
+  --color-success: #4CAF50;
+  --color-warning: #FF9800;
+  --color-error: #F44336;
+  --color-info: #2196F3;
+  --font-family-primary: Inter, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-line-height-tight: 1.2;
+  --font-line-height-normal: 1.5;
+  --font-line-height-relaxed: 1.75;
+  --size-base: 4px; /** Each platform sets its own base unit. This is the default. */
+  --size-spacing-1x: 1; /** 1 * base unit */
+  --size-spacing-2x: 2; /** 2 * base unit */
+  --size-spacing-3x: 3; /** 3 * base unit */
+  --size-spacing-4x: 4; /** 4 * base unit */
+  --size-spacing-6x: 6; /** 6 * base unit */
+  --size-spacing-8x: 8; /** 8 * base unit */
+  --size-spacing-12x: 12; /** 12 * base unit */
+  --size-spacing-16x: 16; /** 16 * base unit */
+  --size-radius-sm: 1; /** 1 * base unit */
+  --size-radius-md: 2; /** 2 * base unit */
+  --size-radius-lg: 4; /** 4 * base unit */
+  --size-radius-full: 9999px;
+}

@@ -1,0 +1,24 @@
+{
+  "size": {
+    "base": {
+      "comment": "Each platform sets its own base unit. This is the default.",
+      "value": "4px"
+    },
+    "spacing": {
+      "1x": { "value": "1", "comment": "1 * base unit" },
+      "2x": { "value": "2", "comment": "2 * base unit" },
+      "3x": { "value": "3", "comment": "3 * base unit" },
+      "4x": { "value": "4", "comment": "4 * base unit" },
+      "6x": { "value": "6", "comment": "6 * base unit" },
+      "8x": { "value": "8", "comment": "8 * base unit" },
+      "12x": { "value": "12", "comment": "12 * base unit" },
+      "16x": { "value": "16", "comment": "16 * base unit" }
+    },
+    "radius": {
+      "sm": { "value": "1", "comment": "1 * base unit" },
+      "md": { "value": "2", "comment": "2 * base unit" },
+      "lg": { "value": "4", "comment": "4 * base unit" },
+      "full": { "value": "9999px" }
+    }
+  }
+}

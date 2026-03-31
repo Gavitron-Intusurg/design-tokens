@@ -1,0 +1,54 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+export const ColorPrimary100 = "#E3F2FD";
+export const ColorPrimary200 = "#90CAF9";
+export const ColorPrimary300 = "#42A5F5";
+export const ColorPrimary400 = "#1E88E5";
+export const ColorPrimary500 = "#1565C0";
+export const ColorNeutral0 = "#FFFFFF";
+export const ColorNeutral100 = "#F5F5F5";
+export const ColorNeutral200 = "#E0E0E0";
+export const ColorNeutral300 = "#BDBDBD";
+export const ColorNeutral400 = "#9E9E9E";
+export const ColorNeutral500 = "#757575";
+export const ColorNeutral600 = "#616161";
+export const ColorNeutral700 = "#424242";
+export const ColorNeutral800 = "#303030";
+export const ColorNeutral900 = "#212121";
+export const ColorNeutral1000 = "#000000";
+export const ColorContentPrimary = "#00ff00";
+export const ColorSuccess = "#4CAF50";
+export const ColorWarning = "#FF9800";
+export const ColorError = "#F44336";
+export const ColorInfo = "#2196F3";
+export const FontFamilyPrimary = "Inter, sans-serif";
+export const FontFamilyMono = "'JetBrains Mono', monospace";
+export const FontWeightRegular = "400";
+export const FontWeightMedium = "500";
+export const FontWeightSemibold = "600";
+export const FontWeightBold = "700";
+export const FontSizeXs = "0.75rem";
+export const FontSizeSm = "0.875rem";
+export const FontSizeMd = "1rem";
+export const FontSizeLg = "1.25rem";
+export const FontSizeXl = "1.5rem";
+export const FontSize2xl = "2rem";
+export const FontSize3xl = "2.5rem";
+export const FontLineHeightTight = "1.2";
+export const FontLineHeightNormal = "1.5";
+export const FontLineHeightRelaxed = "1.75";
+export const SizeBase = "4px"; // Each platform sets its own base unit. This is the default.
+export const SizeSpacing1x = "1"; // 1 * base unit
+export const SizeSpacing2x = "2"; // 2 * base unit
+export const SizeSpacing3x = "3"; // 3 * base unit
+export const SizeSpacing4x = "4"; // 4 * base unit
+export const SizeSpacing6x = "6"; // 6 * base unit
+export const SizeSpacing8x = "8"; // 8 * base unit
+export const SizeSpacing12x = "12"; // 12 * base unit
+export const SizeSpacing16x = "16"; // 16 * base unit
+export const SizeRadiusSm = "1"; // 1 * base unit
+export const SizeRadiusMd = "2"; // 2 * base unit
+export const SizeRadiusLg = "4"; // 4 * base unit
+export const SizeRadiusFull = "9999px";
