@@ -89,12 +89,6 @@ function sortTokens(tokens) {
   });
 }
 
-const qmlRenderers = {
-  color: (name, value) => `    readonly property color ${name}: "${value}"`,
-  numeric: (name, value) => `    readonly property real ${name}: ${value}`,
-  string: (name, value) => `    readonly property string ${name}: "${value}"`,
-};
-
 const cppRenderers = {
   color: (name, value) => `inline const QColor ${name} = QColor("${value}");`,
   numeric: (name, value) => `constexpr double ${name} = ${value};`,
@@ -126,35 +120,6 @@ export default {
       },
     },
     formats: {
-      "qml/singleton": function ({ dictionary }) {
-        const lines = [
-          "pragma Singleton",
-          "import QtQuick 2.15",
-          "",
-          "QtObject {",
-          "",
-        ];
-
-        sortTokens(dictionary.allTokens).forEach((token) => {
-          // Build camelCase name with "color" stripped for color tokens
-          const path = stripColorPrefix(token.path);
-          const name = path
-            .join("_")
-            .replace(/-/g, "_")
-            .split("_")
-            .map((p, i) => (i === 0 ? p : p.charAt(0).toUpperCase() + p.slice(1)))
-            .join("");
-          const type = classifyToken(token);
-          if (type && qmlRenderers[type]) {
-            lines.push(qmlRenderers[type](name, token.value));
-          }
-        });
-
-        lines.push("}");
-        lines.push("");
-        return lines.join("\n");
-      },
-
       "cpp/header": function ({ dictionary }) {
         const lines = [
           "#pragma once",
@@ -239,16 +204,6 @@ export default {
               return ak[2] - bk[2];
             },
           },
-        },
-      ],
-    },
-    qml: {
-      transformGroup: "js",
-      buildPath: "build/qml/",
-      files: [
-        {
-          destination: "Tokens.qml",
-          format: "qml/singleton",
         },
       ],
     },
