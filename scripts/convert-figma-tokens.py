@@ -82,12 +82,15 @@ def resolve_alias_path(var_id, id_map):
                 color_parts = color_parts[1:]
             return "color." + ".".join(color_parts)
         elif parts[0] == "sizes":
-            return "size.primitive." + ".".join(parts[1:])
+            return "size." + ".".join(parts[1:])
     elif coll_name == "Alias Tokens":
         if parts[0] == "colors":
             return "color." + ".".join(parts[1:])
         elif parts[0] == "sizes":
-            return "size.alias." + ".".join(parts[1:])
+            # Flatten: sizes/padding/padding -> size.padding
+            # Take only the leaf name
+            leaf = parts[-1] if len(parts) > 1 else parts[0]
+            return "size." + leaf
     elif coll_name == "Fonts Sizes":
         return "font.size." + ".".join(parts)
     elif coll_name == "Typography":
@@ -234,29 +237,28 @@ sizes["base"] = {
     "comment": "Base unit in px. Set per platform: 24 for MCC, 28 for Cart/Tower."
 }
 
-# Primitive sizes
+# Primitive sizes — flatten directly under "size" (no "primitive" prefix)
 for v in primitives["variables"]:
     if v["type"] != "FLOAT":
         continue
     parts = v["name"].split("/")  # e.g. sizes/double
-    if parts[0] == "sizes":
-        keys = ["primitive"] + parts[1:]
-    else:
-        keys = ["primitive"] + parts
+    parts = parts[1:] if parts[0] == "sizes" else parts
+    keys = parts  # just ["double"], ["semi"], etc.
 
     rv = v["resolvedValuesByMode"][PRIM_MODE]["resolvedValue"]
     mult = to_multiplier(rv)
     set_nested(sizes, keys, {"value": mult, "comment": f"{mult} * base"})
 
-# Alias sizes
+# Alias sizes — flatten: strip "alias" prefix AND the sub-group name
+# e.g. sizes/padding/padding -> ["padding"], sizes/padding/padding_large -> ["padding_large"]
 for v in alias_tokens["variables"]:
     if v["type"] != "FLOAT":
         continue
     parts = v["name"].split("/")
-    if parts[0] == "sizes":
-        keys = ["alias"] + parts[1:]
-    else:
-        keys = ["alias"] + parts
+    parts = parts[1:] if parts[0] == "sizes" else parts
+    # parts is now e.g. ["padding", "padding"] or ["padding", "padding_large"]
+    # Take only the leaf name (last element), which already contains the full name
+    keys = [parts[-1]] if len(parts) > 1 else parts
 
     raw = v["valuesByMode"].get(ALIAS_MODE)
     resolved = v["resolvedValuesByMode"].get(ALIAS_MODE, {})
@@ -272,12 +274,12 @@ for v in alias_tokens["variables"]:
         mult = to_multiplier(rv)
         set_nested(sizes, keys, {"value": mult, "comment": f"{mult} * base"})
 
-# Component-specific sizes
+# Component-specific sizes — strip "component" prefix
 for v in component_specific["variables"]:
     if v["type"] != "FLOAT":
         continue
     parts = v["name"].split("/")
-    keys = ["component"] + parts
+    keys = parts  # e.g. ["button", "size", "button_height"]
 
     raw = v["valuesByMode"].get(COMP_MODE)
     resolved = v["resolvedValuesByMode"].get(COMP_MODE, {})
