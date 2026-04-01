@@ -1,28 +1,92 @@
 {
   "font": {
     "family": {
-      "primary": { "value": "Inter, sans-serif" },
-      "mono": { "value": "'JetBrains Mono', monospace" }
+      "inter": {
+        "value": "Inter"
+      },
+      "brown": {
+        "value": "IntuitiveBrownPro"
+      },
+      "gtpressura": {
+        "value": "GTPressuraPro"
+      }
     },
-    "weight": {
-      "regular": { "value": "400" },
-      "medium": { "value": "500" },
-      "semibold": { "value": "600" },
-      "bold": { "value": "700" }
+    "scale": {
+      "stepMultiplier": {
+        "value": 0.125,
+        "comment": "Each step changes font size by this fraction of body size"
+      },
+      "bodyLineHeightMultiplier": {
+        "value": 0.33,
+        "comment": "Line height = fontSize * (1 + this). Used for steps -3 to 2 (micro through subtitle)."
+      },
+      "headlineLineHeightMultiplier": {
+        "value": 0.20,
+        "comment": "Line height = fontSize * (1 + this). Used for steps 3 to 12 (h4 through h1)."
+      },
+      "displayLineHeightMultiplier": {
+        "value": 0.16,
+        "comment": "Line height = fontSize * (1 + this). Used for steps 13+ (display sizes)."
+      }
     },
     "size": {
-      "xs": { "value": "0.75rem" },
-      "sm": { "value": "0.875rem" },
-      "md": { "value": "1rem" },
-      "lg": { "value": "1.25rem" },
-      "xl": { "value": "1.5rem" },
-      "2xl": { "value": "2rem" },
-      "3xl": { "value": "2.5rem" }
+      "micro": {
+        "value": -3,
+        "comment": "Step -3. Line height category: body"
+      },
+      "helper": {
+        "value": -2,
+        "comment": "Step -2. Line height category: body"
+      },
+      "caption": {
+        "value": -1,
+        "comment": "Step -1. Line height category: body"
+      },
+      "body": {
+        "value": 0,
+        "comment": "Step 0 (base). Line height category: body"
+      },
+      "subtitle": {
+        "value": 2,
+        "comment": "Step 2. Line height category: body"
+      },
+      "h4": {
+        "value": 4,
+        "comment": "Step 4. Line height category: headline"
+      },
+      "h3": {
+        "value": 6,
+        "comment": "Step 6. Line height category: headline"
+      },
+      "h2": {
+        "value": 8,
+        "comment": "Step 8. Line height category: headline"
+      },
+      "h1": {
+        "value": 10,
+        "comment": "Step 10. Line height category: headline"
+      },
+      "display2": {
+        "value": 13,
+        "comment": "Step 13. Line height category: display"
+      },
+      "display1": {
+        "value": 23,
+        "comment": "Step 23. Line height category: display"
+      }
     },
-    "lineHeight": {
-      "tight": { "value": "1.2" },
-      "normal": { "value": "1.5" },
-      "relaxed": { "value": "1.75" }
+    "typeface": {
+      "micro": { "value": "{font.family.inter}", "comment": "Inter Regular" },
+      "helper": { "value": "{font.family.inter}", "comment": "Inter Regular" },
+      "caption": { "value": "{font.family.inter}", "comment": "Inter Regular, Inter Semibold" },
+      "body": { "value": "{font.family.inter}", "comment": "Inter Regular, Inter Semibold" },
+      "subtitle": { "value": "{font.family.inter}", "comment": "Inter Regular, Inter Semibold" },
+      "h4": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" },
+      "h3": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" },
+      "h2": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" },
+      "h1": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" },
+      "display2": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" },
+      "display1": { "value": "{font.family.brown}", "comment": "Brown Pro Bold, GT Pressura Mono Regular" }
     }
   }
 }
