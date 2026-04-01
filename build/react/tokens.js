@@ -287,77 +287,61 @@ export const Surface_a = "#000000";
 export const Surface_b = "#202124";
 export const Surface_d = "#46484C";
 export const Surface_e = "#000000CC";
-export const BackgroundComponent_lowContrast_background_default_c = "#46484C";
-export const BackgroundComponent_lowContrast_background_default_b = "#333438";
-export const BackgroundComponent_lowContrast_background_default_a = "#202124";
-export const BackgroundComponent_lowContrast_background_disabled_c = "#46484C";
-export const BackgroundComponent_lowContrast_background_disabled_b = "#333438";
-export const BackgroundComponent_lowContrast_background_disabled_a = "#202124";
-export const BackgroundComponent_lowContrast_background_pressed_c = "#55575C";
-export const BackgroundComponent_lowContrast_background_pressed_b = "#46484C";
-export const BackgroundComponent_lowContrast_background_pressed_a = "#333438";
-export const BackgroundComponent_background_interactive_default = "#3D4DFF";
-export const BackgroundComponent_background_interactive_pressed = "#6188FF";
-export const BackgroundComponent_highContrast_background_default = "#F2F3F5";
-export const BackgroundComponent_highContrast_background_pressed = "#DCDCE0";
-export const BackgroundComponent_lowContrast_background_default_d = "#55575C";
-export const BackgroundComponent_lowContrast_background_pressed_d = "#6A6B70";
-export const BackgroundComponent_lowContrast_background_disabled_d = "#55575C";
-export const BackgroundComponent_highContrast_background_disabled_a = "#333438";
-export const BackgroundComponent_highContrast_background_disabled_b = "#46484C";
-export const BackgroundComponent_highContrast_background_disabled_c = "#55575C";
-export const BackgroundComponent_highContrast_background_disabled_d = "#6A6B70";
-export const BackgroundComponent_lowContrast_background_default_e = "#202124CC";
-export const BackgroundComponent_lowcontrast_informational_background_default_a =
+export const Component_lowContrast_background_default_c = "#46484C";
+export const Component_lowContrast_background_default_b = "#333438";
+export const Component_lowContrast_background_default_a = "#202124";
+export const Component_lowContrast_background_disabled_c = "#46484C";
+export const Component_lowContrast_background_disabled_b = "#333438";
+export const Component_lowContrast_background_disabled_a = "#202124";
+export const Component_lowContrast_background_pressed_c = "#55575C";
+export const Component_lowContrast_background_pressed_b = "#46484C";
+export const Component_lowContrast_background_pressed_a = "#333438";
+export const Component_background_interactive_default = "#3D4DFF";
+export const Component_background_interactive_pressed = "#6188FF";
+export const Component_highContrast_background_default = "#F2F3F5";
+export const Component_highContrast_background_pressed = "#DCDCE0";
+export const Component_lowContrast_background_default_d = "#55575C";
+export const Component_lowContrast_background_pressed_d = "#6A6B70";
+export const Component_lowContrast_background_disabled_d = "#55575C";
+export const Component_highContrast_background_disabled_a = "#333438";
+export const Component_highContrast_background_disabled_b = "#46484C";
+export const Component_highContrast_background_disabled_c = "#55575C";
+export const Component_highContrast_background_disabled_d = "#6A6B70";
+export const Component_lowContrast_background_default_e = "#202124CC";
+export const Component_lowcontrast_informational_background_default_a =
   "#17192A";
-export const BackgroundComponent_lowcontrast_informational_background_default_b =
+export const Component_lowcontrast_informational_background_default_b =
   "#242740";
-export const BackgroundComponent_lowcontrast_informational_background_default_c =
+export const Component_lowcontrast_informational_background_default_c =
   "#333961";
-export const BackgroundComponent_lowcontrast_caution_background_default_a =
-  "#292217";
-export const BackgroundComponent_lowcontrast_caution_background_default_b =
-  "#3E3424";
-export const BackgroundComponent_lowcontrast_caution_background_default_c =
-  "#5F4F31";
-export const BackgroundComponent_lowcontrast_warning_background_default_a =
-  "#241416";
-export const BackgroundComponent_lowcontrast_warning_background_default_b =
-  "#391F22";
-export const BackgroundComponent_lowcontrast_warning_background_default_c =
-  "#562B2F";
-export const BackgroundComponent_lowcontrast_informational_background_default_d =
+export const Component_lowcontrast_caution_background_default_a = "#292217";
+export const Component_lowcontrast_caution_background_default_b = "#3E3424";
+export const Component_lowcontrast_caution_background_default_c = "#5F4F31";
+export const Component_lowcontrast_warning_background_default_a = "#241416";
+export const Component_lowcontrast_warning_background_default_b = "#391F22";
+export const Component_lowcontrast_warning_background_default_c = "#562B2F";
+export const Component_lowcontrast_informational_background_default_d =
   "#3E4282";
-export const BackgroundComponent_lowcontrast_caution_background_default_d =
-  "#7D653C";
-export const BackgroundComponent_lowcontrast_warning_background_default_d =
-  "#703439";
-export const BackgroundComponent_highcontrast_informational_background_default_a =
+export const Component_lowcontrast_caution_background_default_d = "#7D653C";
+export const Component_lowcontrast_warning_background_default_d = "#703439";
+export const Component_highcontrast_informational_background_default_a =
   "#E7ECF9";
-export const BackgroundComponent_highcontrast_informational_background_default_b =
+export const Component_highcontrast_informational_background_default_b =
   "#CBD4EC";
-export const BackgroundComponent_highcontrast_informational_background_default_c =
+export const Component_highcontrast_informational_background_default_c =
   "#A9B6DA";
-export const BackgroundComponent_highcontrast_informational_background_default_d =
+export const Component_highcontrast_informational_background_default_d =
   "#8798CB";
-export const BackgroundComponent_highcontrast_caution_background_default_a =
-  "#F7F3EB";
-export const BackgroundComponent_highcontrast_caution_background_default_b =
-  "#EAE0CC";
-export const BackgroundComponent_highcontrast_caution_background_default_c =
-  "#D7C8A8";
-export const BackgroundComponent_highcontrast_caution_background_default_d =
-  "#C7B286";
-export const BackgroundComponent_highcontrast_warning_background_default_a =
-  "#F7DFE1";
-export const BackgroundComponent_highcontrast_warning_background_default_b =
-  "#F7DFE1";
-export const BackgroundComponent_highcontrast_warning_background_default_c =
-  "#D7959A";
-export const BackgroundComponent_highcontrast_warning_background_default_d =
-  "#C1747A";
-export const BackgroundComponent_lowContrast_background_pressed_e = "#333438";
-export const BackgroundComponent_lowContrast_background_disabled_e = "#202124";
+export const Component_highcontrast_caution_background_default_a = "#F7F3EB";
+export const Component_highcontrast_caution_background_default_b = "#EAE0CC";
+export const Component_highcontrast_caution_background_default_c = "#D7C8A8";
+export const Component_highcontrast_caution_background_default_d = "#C7B286";
+export const Component_highcontrast_warning_background_default_a = "#F7DFE1";
+export const Component_highcontrast_warning_background_default_b = "#F7DFE1";
+export const Component_highcontrast_warning_background_default_c = "#D7959A";
+export const Component_highcontrast_warning_background_default_d = "#C1747A";
+export const Component_lowContrast_background_pressed_e = "#333438";
+export const Component_lowContrast_background_disabled_e = "#202124";
 export const Button_lowContrast_surface_default = "#202124";
 export const Button_lowContrast_background_disabled = "#202124";
 export const Button_lowContrast_surface_background_pressed = "#6188FF";
