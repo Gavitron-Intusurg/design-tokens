@@ -999,46 +999,46 @@
       }
     },
     "button_lowContrast_surface_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "button_lowContrast_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "button_lowContrast_surface_background_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "button_lowContrast_background_active": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "button_lowContrast_content": {
       "value": "{color.content_lowContrast_primary}"
     },
     "button_lowContrast_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "button_highContrast_background_pressed": {
-      "value": "{color.background.component_highContrast_background_pressed}"
+      "value": "{color.gray_20}"
     },
     "button_lowContrast_content_disabled": {
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "button_highContrast_background_default": {
-      "value": "{color.background.component_highContrast_background_default}"
+      "value": "{color.gray_10}"
     },
     "button_highContrast_content": {
       "value": "{color.content_highContrast_primary}"
     },
     "button_highContrast_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "button_highContrast_content_disabled": {
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "button_highContrast_background_active": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "button_highContrast_background_active_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "button_highContrast_content_active": {
       "value": "{color.content_lowContrast_primary}"
@@ -1047,19 +1047,19 @@
       "value": "{color.content_lowContrast_primary}"
     },
     "switch_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "switch_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "switch_background_toggle": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "switch_background_toggle_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "switch_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "switch_handle_default": {
       "value": "{color.content_lowContrast_primary}"
@@ -1074,19 +1074,19 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "checkbox_input_background_active_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "checkbox_input_surface_active": {
-      "value": "{color.background.component_highContrast_background_pressed}"
+      "value": "{color.gray_20}"
     },
     "checkbox_input_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "checkbox_content_default": {
       "value": "{color.content_lowContrast_primary}"
     },
     "checkbox_input_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "checkbox_input_background_default": {
       "value": "{color.surface_a}"
@@ -1110,16 +1110,16 @@
       "value": "{color.surface_a}"
     },
     "radioButton__input_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "radioButton__input_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "radioButton__input_background_active_default": {
-      "value": "{color.background.component_highContrast_background_default}"
+      "value": "{color.gray_10}"
     },
     "radioButton__input_background_active_pressed": {
-      "value": "{color.background.component_highContrast_background_pressed}"
+      "value": "{color.gray_20}"
     },
     "radioButton__input_border_default": {
       "value": "{color.border_highContrast_default_a}"
@@ -1143,13 +1143,13 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "stepper_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "stepper_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "stepper_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "stepper_content": {
       "value": "{color.content_lowContrast_primary}"
@@ -1158,25 +1158,25 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "divider_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "progressbar_background_track": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "progressbar_background_active": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "progressbar_content": {
       "value": "{color.content_lowContrast_secondary}"
     },
     "stackedRow_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "stackedRow_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "stackedRow_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "stackedRow_content_default": {
       "value": "{color.content_lowContrast_primary}"
@@ -1188,19 +1188,19 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "segmentedControl_item_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "segmentedControl_item_background_active_default": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "segmentedControl_item_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "segmentedControl_item_background_active_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "segmentedControl_item_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "segmentedControl_item_content": {
       "value": "{color.content_lowContrast_primary}"
@@ -1209,19 +1209,19 @@
       "value": "{color.content_highContrast_disabled_a}"
     },
     "segmentedControl_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "segmentedControl_item_background_active_disabled": {
-      "value": "{color.background.component_highContrast_background_disabled_a}"
+      "value": "{color.gray_90}"
     },
     "slider_track_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "slider_activeBar_background_pressed": {
-      "value": "{color.background.component_background_interactive_pressed}"
+      "value": "{color.blue_40}"
     },
     "slider_activeBar_background_disabled": {
-      "value": "{color.background.component_highContrast_background_disabled_a}"
+      "value": "{color.gray_90}"
     },
     "slider_handle_default": {
       "value": "{color.blue_40}"
@@ -1230,7 +1230,7 @@
       "value": "{color.content_highContrast_disabled_a}"
     },
     "slider_activeBar_background_default": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "slider_handle_pressed": {
       "value": "{color.content_lowContrast_primary}"
@@ -1245,19 +1245,19 @@
       "value": "{color.content_highContrast_disabled_a}"
     },
     "stacked_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "stack_content": {
       "value": "{color.content_lowContrast_secondary}"
     },
     "dropdown_input_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "dropdown_input_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "dropdown_input_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "dropdown_input_content_default": {
       "value": "{color.content_lowContrast_tertiary}"
@@ -1290,13 +1290,13 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "dropdown_menuOption_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "dropdown_menuOption_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "dropdown_menuOption_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "dropdown_menuOption_content_default": {
       "value": "{color.content_lowContrast_primary}"
@@ -1305,22 +1305,22 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "dropdown_menu_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "dropdown_menu_scrollbar_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_b}"
+      "value": "{color.gray_90}"
     },
     "dropdown_menu_scrollbar_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_b}"
+      "value": "{color.gray_80}"
     },
     "textInput_input_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "textInput_input_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "textInput_input_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_disabled_a}"
+      "value": "{color.gray_100}"
     },
     "textInput_input_border": {
       "value": "{color.border_interactive}"
@@ -1341,13 +1341,13 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "rotationSlider_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_e}"
+      "value": "{color.gray_100_tranparent_80}"
     },
     "rotationSlider_centerTick_default": {
       "value": "{color.content_lowContrast_primary}"
     },
     "rotationSlider_centerTick_pressed": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "rotationSlider_centerTick_disabled": {
       "value": "{color.content_lowContrast_disabled_a}"
@@ -1362,25 +1362,25 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "rotationSlider_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "rotationSlider_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_default_e}"
+      "value": "{color.gray_100_tranparent_80}"
     },
     "sliceSlider_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_e}"
+      "value": "{color.gray_100_tranparent_80}"
     },
     "sliceSlider_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "sliceSlider_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_default_e}"
+      "value": "{color.gray_100_tranparent_80}"
     },
     "sliceSlider_centerTick_default": {
       "value": "{color.content_lowContrast_primary}"
     },
     "sliceSlider_centerTick_pressed": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "sliceSlider_centerTick_disabled": {
       "value": "{color.content_lowContrast_disabled_a}"
@@ -1395,7 +1395,7 @@
       "value": "{color.content_lowContrast_disabled_a}"
     },
     "sliceSlider_centerTick_border": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "sliceSlider_tick_catheter": {
       "value": "{color.cyan_50}"
@@ -1404,19 +1404,19 @@
       "value": "{color.teal_50}"
     },
     "stepindicator_background_upcoming": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "stepindicator_background_active": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "stepindicator_background_complete": {
       "value": "{color.blue_80_desat}"
     },
     "card_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "card_background_pressed": {
-      "value": "{color.background.component_lowContrast_background_pressed_a}"
+      "value": "{color.gray_90}"
     },
     "card_border_active": {
       "value": "{color.border_interactive}"
@@ -1428,7 +1428,7 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "dialog_background_information": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_a}"
+      "value": "{color.blue_100_desat}"
     },
     "dialog_content_title": {
       "value": "{color.content_lowContrast_primary}"
@@ -1437,10 +1437,10 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "dialog_background_caution": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_a}"
+      "value": "{color.yellow_100_desat}"
     },
     "dialog_background_warning": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_a}"
+      "value": "{color.red_100_desat}"
     },
     "dialog_border_information": {
       "value": "{color.border_informational_c}"
@@ -1452,13 +1452,13 @@
       "value": "{color.border_warning_c}"
     },
     "dialog_icon_background_information": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_b}"
+      "value": "{color.blue_90_desat}"
     },
     "dialog_icon_background_caution": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_b}"
+      "value": "{color.yellow_90_desat}"
     },
     "dialog_icon_background_warning": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_b}"
+      "value": "{color.red_90_desat}"
     },
     "dialog_icon_information": {
       "value": "{color.blue_40_desat}"
@@ -1470,13 +1470,13 @@
       "value": "{color.red_40_desat}"
     },
     "dialog_lowcontrast_button_background_information_default": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_c}"
+      "value": "{color.blue_80_desat}"
     },
     "dialog_lowcontrast_button_background_caution_default": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_c}"
+      "value": "{color.yellow_80_desat}"
     },
     "dialog_lowcontrast_button_background_warning_default": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_c}"
+      "value": "{color.red_80_desat}"
     },
     "dialog_lowcontrast_button_information_content_default": {
       "value": "{color.content_lowContrast_informational_primary}"
@@ -1485,22 +1485,22 @@
       "value": "{color.content_highContrast_informational_tertiary}"
     },
     "dialog_lowcontrast_button_background_information_pressed": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_d}"
+      "value": "{color.blue_70_desat}"
     },
     "dialog_lowcontrast_button_background_caution_pressed": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_d}"
+      "value": "{color.yellow_70_desat}"
     },
     "dialog_lowcontrast_button_background_warning_pressed": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_d}"
+      "value": "{color.red_70_desat}"
     },
     "dialog_lowcontrast_button_background_information_disabled": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_b}"
+      "value": "{color.blue_90_desat}"
     },
     "dialog_lowcontrast_button_background_caution_disabled": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_b}"
+      "value": "{color.yellow_90_desat}"
     },
     "dialog_lowcontrast_button_background_warning_disabled": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_b}"
+      "value": "{color.red_90_desat}"
     },
     "dialog_lowcontrast_button_caution_content_default": {
       "value": "{color.content_lowContrast_caution_primary}"
@@ -1515,31 +1515,31 @@
       "value": "{color.content_highContrast_warning_tertiary}"
     },
     "dialog_highcontrast_button_background_information_default": {
-      "value": "{color.background.component_highcontrast_informational_background_default_a}"
+      "value": "{color.blue_10_desat}"
     },
     "dialog_highcontrast_button_background_caution_default": {
-      "value": "{color.background.component_highcontrast_caution_background_default_a}"
+      "value": "{color.yellow_10_desat}"
     },
     "dialog_highcontrast_button_background_warning_default": {
-      "value": "{color.background.component_highcontrast_warning_background_default_a}"
+      "value": "{color.red_10_desat}"
     },
     "dialog_highcontrast_button_background_information_pressed": {
-      "value": "{color.background.component_highcontrast_informational_background_default_b}"
+      "value": "{color.blue_20_desat}"
     },
     "dialog_highcontrast_button_background_caution_pressed": {
-      "value": "{color.background.component_highcontrast_caution_background_default_b}"
+      "value": "{color.yellow_20_desat}"
     },
     "dialog_highcontrast_button_background_warning_pressed": {
-      "value": "{color.background.component_highcontrast_warning_background_default_b}"
+      "value": "{color.red_20_desat}"
     },
     "dialog_highcontrast_button_background_information_disabled": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_b}"
+      "value": "{color.blue_90_desat}"
     },
     "dialog_highcontrast_button_background_caution_disabled": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_b}"
+      "value": "{color.yellow_90_desat}"
     },
     "dialog_highcontrast_button_surface_warning_disabled": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_b}"
+      "value": "{color.red_90_desat}"
     },
     "dialog_highcontrast_button_information_content_default": {
       "value": "{color.content_highContrast_informational_primary}"
@@ -1560,16 +1560,16 @@
       "value": "{color.content_highContrast_warning_tertiary}"
     },
     "notification_background_information": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_a}"
+      "value": "{color.blue_100_desat}"
     },
     "notification_background_caution": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_a}"
+      "value": "{color.yellow_100_desat}"
     },
     "notification_icon_background_information": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_b}"
+      "value": "{color.blue_90_desat}"
     },
     "notification_icon_background_caution": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_b}"
+      "value": "{color.yellow_90_desat}"
     },
     "notification_icon_information": {
       "value": "{color.blue_40_desat}"
@@ -1590,22 +1590,22 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "notification_lowcontrast_button_background_information_default": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_c}"
+      "value": "{color.blue_80_desat}"
     },
     "notification_lowcontrast_button_background_caution_default": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_c}"
+      "value": "{color.yellow_80_desat}"
     },
     "notification_lowcontrast_button_background_information_pressed": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_d}"
+      "value": "{color.blue_70_desat}"
     },
     "notification_lowcontrast_button_background_caution_pressed": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_d}"
+      "value": "{color.yellow_70_desat}"
     },
     "notification_lowcontrast_button_background_information_disabled": {
-      "value": "{color.background.component_lowcontrast_informational_background_default_b}"
+      "value": "{color.blue_90_desat}"
     },
     "notification_lowcontrast_button_background_caution_disabled": {
-      "value": "{color.background.component_lowcontrast_caution_background_default_b}"
+      "value": "{color.yellow_90_desat}"
     },
     "notification_lowcontrast_button_information_content_default": {
       "value": "{color.content_lowContrast_informational_primary}"
@@ -1620,10 +1620,10 @@
       "value": "{color.content_highContrast_caution_tertiary}"
     },
     "notification_background_warning": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_a}"
+      "value": "{color.red_100_desat}"
     },
     "notification_icon_background_warning": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_b}"
+      "value": "{color.red_90_desat}"
     },
     "notification_icon_warning": {
       "value": "{color.red_40_desat}"
@@ -1632,13 +1632,13 @@
       "value": "{color.border_warning_c}"
     },
     "notification_lowcontrast_button_background_warning_default": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_c}"
+      "value": "{color.red_80_desat}"
     },
     "notification_lowcontrast_button_background_warning_pressed": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_d}"
+      "value": "{color.red_70_desat}"
     },
     "notification_lowcontrast_button_background_warning_disabled": {
-      "value": "{color.background.component_lowcontrast_warning_background_default_b}"
+      "value": "{color.red_90_desat}"
     },
     "notification_lowcontrast_button_warning_content_default": {
       "value": "{color.content_lowContrast_warning_primary}"
@@ -1647,7 +1647,7 @@
       "value": "{color.content_highContrast_warning_tertiary}"
     },
     "popover_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "popover_border": {
       "value": "{color.border_lowContrast_default_a}"
@@ -1662,7 +1662,7 @@
       "value": "{color.content_lowContrast_secondary}"
     },
     "globalBar_button_border": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "workflowPanel_divider_scroll": {
       "value": "{color.border_lowContrast_default_a}"
@@ -1701,7 +1701,7 @@
       "value": "{color.border_interactive}"
     },
     "viewBox_status_banner_background_divAssist": {
-      "value": "{color.background.component_background_interactive_default}"
+      "value": "{color.blue_50}"
     },
     "viewBox_status_banner_content_divAssist": {
       "value": "{color.content_lowContrast_primary}"
@@ -1710,7 +1710,7 @@
       "value": "{color.border_lowContrast_default_b}"
     },
     "viewBox_banner_background": {
-      "value": "{color.background.component_lowContrast_background_default_e}"
+      "value": "{color.gray_100_tranparent_80}"
     },
     "viewBox_banner_content_information": {
       "value": "{color.content_lowContrast_primary}"
@@ -1722,16 +1722,16 @@
       "value": "{color.content_lowContrast_caution_primary}"
     },
     "loader_track_background": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "loader_object_background": {
       "value": "{color.content_lowContrast_primary}"
     },
     "dataCard_background_default": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "dataCard_background_disabled": {
-      "value": "{color.background.component_lowContrast_background_default_a}"
+      "value": "{color.gray_100}"
     },
     "dataCard_background_variant1": {
       "value": "{color.teal_100_desat}"
