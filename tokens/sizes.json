@@ -132,14 +132,16 @@
     "radius_xx_large": {
       "value": "{size.sext}"
     },
-    "border": {
-      "value": "{size.quarter}"
-    },
     "component_height_small": {
       "value": "{size.quint}"
     },
-    "border_thin": {
-      "value": "{size.eighth}"
+    "border": {
+      "default": {
+        "value": "{size.quarter}"
+      },
+      "thin": {
+        "value": "{size.eighth}"
+      }
     },
     "switch": {
       "size": {
@@ -197,7 +199,7 @@
           "value": "{size.icon}"
         },
         "checkbox_icon_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         },
         "checkbox_input_size": {
           "value": "{size.double_plus_semi}"
@@ -213,7 +215,7 @@
           "value": "{size.padding_small}"
         },
         "radioButton_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         },
         "radioButton__input_icon_active_size": {
           "value": "{size.single_plus_semi}"
@@ -400,7 +402,7 @@
           "value": "{size.padding_small}"
         },
         "dropdown_input_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         }
       }
     },
@@ -453,7 +455,7 @@
           "value": "{size.icon}"
         },
         "textInput_input_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         }
       }
     },
@@ -518,7 +520,7 @@
           "value": "{size.padding_small}"
         },
         "sliceSlider_tick_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         },
         "sliceSlider_tick_width_small": {
           "value": "{size.quad}"
@@ -589,7 +591,7 @@
           "value": "{size.radius_small}"
         },
         "card_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         }
       }
     },
@@ -614,7 +616,7 @@
           "value": "{size.component_height_small}"
         },
         "dialog_border": {
-          "value": "{size.border_thin}"
+          "value": "{size.border.thin}"
         },
         "dialog_icon_container_radius": {
           "value": "{size.radius}"
@@ -627,7 +629,7 @@
           "value": "{size.radius}"
         },
         "notification_border": {
-          "value": "{size.border_thin}"
+          "value": "{size.border.thin}"
         },
         "notification_icon_container_radius": {
           "value": "{size.radius_x_small}"
@@ -661,7 +663,7 @@
           "value": "{size.padding_small}"
         },
         "popover_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         }
       }
     },
@@ -674,7 +676,7 @@
           "value": "{size.padding_small}"
         },
         "globalBar_button_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         }
       }
     },
@@ -687,7 +689,7 @@
           "value": "{size.padding_small}"
         },
         "viewBox_border": {
-          "value": "{size.border_thin}"
+          "value": "{size.border.thin}"
         },
         "viewBox_status_banner_height_small": {
           "value": "{size.component_height_small}"
@@ -737,7 +739,7 @@
           "value": "{size.padding_small}"
         },
         "wokflowPanel_border": {
-          "value": "{size.border_thin}"
+          "value": "{size.border.thin}"
         },
         "wokflowPanel_radius": {
           "value": "{size.radius_x_large}"
@@ -756,10 +758,10 @@
           "value": "{size.padding_small}"
         },
         "marker_container_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         },
         "marker_object_border": {
-          "value": "{size.border}"
+          "value": "{size.border.default}"
         },
         "marker_container_radius": {
           "value": "{size.radius_small}"
@@ -768,7 +770,7 @@
           "value": "{size.quad}"
         },
         "marker_object_border_thin": {
-          "value": "{size.border_thin}"
+          "value": "{size.border.thin}"
         },
         "marker_handle_height": {
           "value": "{size.single}"
