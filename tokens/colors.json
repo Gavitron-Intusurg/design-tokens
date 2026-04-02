@@ -741,106 +741,106 @@
       }
     },
     "border": {
-      "border_lowContrast_default_c": {
+      "lowContrast_default_c": {
         "value": "{color.gray_70}"
       },
-      "border_lowContrast_default_a": {
+      "lowContrast_default_a": {
         "value": "{color.gray_90}"
       },
-      "border_lowContrast_default_b": {
+      "lowContrast_default_b": {
         "value": "{color.gray_80}"
       },
-      "border_interactive": {
+      "interactive": {
         "value": "{color.blue_50}"
       },
-      "border_highContrast_default_a": {
+      "highContrast_default_a": {
         "value": "{color.gray_10}"
       },
-      "border_highContrast_default_b": {
+      "highContrast_default_b": {
         "value": "{color.gray_20}"
       },
-      "border_highContrast_default_c": {
+      "highContrast_default_c": {
         "value": "{color.gray_30}"
       },
-      "border_lowContrast_disabled_a": {
+      "lowContrast_disabled_a": {
         "value": "{color.gray_90}"
       },
-      "border_lowContrast_disabled_b": {
+      "lowContrast_disabled_b": {
         "value": "{color.gray_80}"
       },
-      "border_lowContrast_disabled_c": {
+      "lowContrast_disabled_c": {
         "value": "{color.gray_70}"
       },
-      "border_lowContrast_default_d": {
+      "lowContrast_default_d": {
         "value": "{color.gray_60}"
       },
-      "border_highContrast_default_d": {
+      "highContrast_default_d": {
         "value": "{color.gray_40}"
       },
-      "border_lowContrast_disabled_d": {
+      "lowContrast_disabled_d": {
         "value": "{color.gray_60}"
       },
-      "border_informational_a": {
+      "informational_a": {
         "value": "{color.blue_90_desat}"
       },
-      "border_informational_b": {
+      "informational_b": {
         "value": "{color.blue_80_desat}"
       },
-      "border_informational_c": {
+      "informational_c": {
         "value": "{color.blue_70_desat}"
       },
-      "border_caution_a": {
+      "caution_a": {
         "value": "{color.yellow_90_desat}"
       },
-      "border_caution_b": {
+      "caution_b": {
         "value": "{color.yellow_80_desat}"
       },
-      "border_caution_c": {
+      "caution_c": {
         "value": "{color.yellow_70_desat}"
       },
-      "border_warning_a": {
+      "warning_a": {
         "value": "{color.red_90_desat}"
       },
-      "border_warning_b": {
+      "warning_b": {
         "value": "{color.red_80_desat}"
       },
-      "border_warning_c": {
+      "warning_c": {
         "value": "{color.red_70_desat}"
       },
-      "border_lowContrast_pressed_a": {
+      "lowContrast_pressed_a": {
         "value": "{color.gray_80}"
       },
-      "border_lowContrast_pressed_b": {
+      "lowContrast_pressed_b": {
         "value": "{color.gray_70}"
       },
-      "border_lowContrast_pressed_c": {
+      "lowContrast_pressed_c": {
         "value": "{color.gray_60}"
       },
-      "border_lowContrast_pressed_d": {
+      "lowContrast_pressed_d": {
         "value": "{color.gray_50}"
       },
-      "border_highContrast_pressed_a": {
+      "highContrast_pressed_a": {
         "value": "{color.gray_20}"
       },
-      "border_highContrast_pressed_b": {
+      "highContrast_pressed_b": {
         "value": "{color.gray_30}"
       },
-      "border_highContrast_pressed_c": {
+      "highContrast_pressed_c": {
         "value": "{color.gray_40}"
       },
-      "border_highContrast_pressed_d": {
+      "highContrast_pressed_d": {
         "value": "{color.gray_50}"
       },
-      "border_highContrast_disabled_a": {
+      "highContrast_disabled_a": {
         "value": "{color.gray_90}"
       },
-      "border_highContrast_disabled_b": {
+      "highContrast_disabled_b": {
         "value": "{color.gray_80}"
       },
-      "border_highContrast_disabled_c": {
+      "highContrast_disabled_c": {
         "value": "{color.gray_70}"
       },
-      "border_highContrast_disabled_d": {
+      "highContrast_disabled_d": {
         "value": "{color.gray_60}"
       }
     },
@@ -1110,13 +1110,13 @@
           "value": "{color.surface.surface_a}"
         },
         "checkbox_input_border_default": {
-          "value": "{color.border.border_highContrast_default_a}"
+          "value": "{color.border.highContrast_default_a}"
         },
         "checkbox_input_border_disabled": {
-          "value": "{color.border.border_highContrast_disabled_a}"
+          "value": "{color.border.highContrast_disabled_a}"
         },
         "checkbox_input_border_pressed": {
-          "value": "{color.border.border_highContrast_pressed_a}"
+          "value": "{color.border.highContrast_pressed_a}"
         },
         "checkbox_icon_default": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1144,13 +1144,13 @@
           "value": "{color.background.component_highContrast_background_pressed}"
         },
         "radioButton__input_border_default": {
-          "value": "{color.border.border_highContrast_default_a}"
+          "value": "{color.border.highContrast_default_a}"
         },
         "radioButton__input_border_pressed": {
-          "value": "{color.border.border_highContrast_pressed_a}"
+          "value": "{color.border.highContrast_pressed_a}"
         },
         "radioButton__input_border_disabled": {
-          "value": "{color.border.border_highContrast_disabled_a}"
+          "value": "{color.border.highContrast_disabled_a}"
         },
         "radioButton_content_primary": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1320,7 +1320,7 @@
           "value": "{color.content.content_lowContrast_disabled_a}"
         },
         "dropdown_input_border_focus": {
-          "value": "{color.border.border_interactive}"
+          "value": "{color.border.interactive}"
         },
         "dropdown_label_content_default": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1385,7 +1385,7 @@
           "value": "{color.background.component_lowContrast_background_disabled_a}"
         },
         "textInput_input_border": {
-          "value": "{color.border.border_interactive}"
+          "value": "{color.border.interactive}"
         },
         "textInput_input_content_default": {
           "value": "{color.content.content_lowContrast_tertiary}"
@@ -1497,7 +1497,7 @@
           "value": "{color.background.component_lowContrast_background_pressed_a}"
         },
         "card_border_active": {
-          "value": "{color.border.border_interactive}"
+          "value": "{color.border.interactive}"
         },
         "card_content_primary": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1525,13 +1525,13 @@
           "value": "{color.background.component_lowcontrast_warning_background_default_a}"
         },
         "dialog_border_information": {
-          "value": "{color.border.border_informational_c}"
+          "value": "{color.border.informational_c}"
         },
         "dialog_border_caution": {
-          "value": "{color.border.border_caution_c}"
+          "value": "{color.border.caution_c}"
         },
         "dialog_border_warning": {
-          "value": "{color.border.border_warning_c}"
+          "value": "{color.border.warning_c}"
         },
         "dialog_icon_background_information": {
           "value": "{color.background.component_lowcontrast_informational_background_default_b}"
@@ -1664,10 +1664,10 @@
           "value": "{color.yellow_40_desat}"
         },
         "notification_border_information": {
-          "value": "{color.border.border_informational_c}"
+          "value": "{color.border.informational_c}"
         },
         "notification_border_caution": {
-          "value": "{color.border.border_caution_c}"
+          "value": "{color.border.caution_c}"
         },
         "notification_content_title": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1715,7 +1715,7 @@
           "value": "{color.red_40_desat}"
         },
         "notification_border_warning": {
-          "value": "{color.border.border_warning_c}"
+          "value": "{color.border.warning_c}"
         },
         "notification_lowcontrast_button_background_warning_default": {
           "value": "{color.background.component_lowcontrast_warning_background_default_c}"
@@ -1740,7 +1740,7 @@
           "value": "{color.background.component_lowContrast_background_default_a}"
         },
         "popover_border": {
-          "value": "{color.border.border_lowContrast_default_a}"
+          "value": "{color.border.lowContrast_default_a}"
         },
         "popover_content": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1763,7 +1763,7 @@
     "workflow": {
       "color": {
         "workflowPanel_divider_scroll": {
-          "value": "{color.border.border_lowContrast_default_a}"
+          "value": "{color.border.lowContrast_default_a}"
         },
         "workflowPanel_content_primary": {
           "value": "{color.content.content_lowContrast_primary}"
@@ -1801,10 +1801,10 @@
     "viewBox": {
       "color": {
         "viewBox_border_default": {
-          "value": "{color.border.border_lowContrast_default_a}"
+          "value": "{color.border.lowContrast_default_a}"
         },
         "viewBox_border_divAssist": {
-          "value": "{color.border.border_interactive}"
+          "value": "{color.border.interactive}"
         },
         "viewBox_status_banner_background_divAssist": {
           "value": "{color.background.component_background_interactive_default}"
@@ -1813,7 +1813,7 @@
           "value": "{color.content.content_lowContrast_primary}"
         },
         "viewBox_banner_border_information": {
-          "value": "{color.border.border_lowContrast_default_b}"
+          "value": "{color.border.lowContrast_default_b}"
         },
         "viewBox_banner_background": {
           "value": "{color.background.component_lowContrast_background_default_e}"
@@ -1822,7 +1822,7 @@
           "value": "{color.content.content_lowContrast_primary}"
         },
         "viewBox_banner_border_caution": {
-          "value": "{color.border.border_caution_b}"
+          "value": "{color.border.caution_b}"
         },
         "viewBox_banner_content_caution": {
           "value": "{color.content.content_lowContrast_caution_primary}"
