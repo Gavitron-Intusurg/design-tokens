@@ -522,6 +522,7 @@ inline const QColor WORKFLOWPANEL_DIVIDER_SCROLL = QColor("#333438");
 inline const QString FONT_FAMILY_INTER = QStringLiteral("Inter");
 inline const QString FONT_FAMILY_BROWN = QStringLiteral("IntuitiveBrownPro");
 inline const QString FONT_FAMILY_GTPRESSURA = QStringLiteral("GTPressuraPro");
+constexpr double FONT_SCALE_BODYSIZE = 2;
 constexpr double FONT_SCALE_STEPMULTIPLIER = 0.125;
 constexpr double FONT_SCALE_BODYLINEHEIGHTMULTIPLIER = 0.33;
 constexpr double FONT_SCALE_HEADLINELINEHEIGHTMULTIPLIER = 0.2;

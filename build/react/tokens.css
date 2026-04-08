@@ -403,6 +403,7 @@
   --surface-c: var(--gray-90);
   --surface-d: var(--gray-80);
   --surface-e: var(--black_tranparent_80);
+  --font-scale-bodySize: var(--size-double); /** Body font size in base units. All type sizes are calculated from this. */
   --font-typeface-micro: var(--font-family-inter); /** Inter Regular */
   --font-typeface-helper: var(--font-family-inter); /** Inter Regular */
   --font-typeface-caption: var(--font-family-inter); /** Inter Regular, Inter Semibold */

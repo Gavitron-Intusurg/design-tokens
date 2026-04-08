@@ -520,6 +520,7 @@ export const LoaderObjectBackground = "#F2F3F5";
 export const FontFamilyInter = "Inter";
 export const FontFamilyBrown = "IntuitiveBrownPro";
 export const FontFamilyGtpressura = "GTPressuraPro";
+export const FontScaleBodySize = 2; // Body font size in base units. All type sizes are calculated from this.
 export const FontScaleStepMultiplier = 0.125; // Each step changes font size by this fraction of body size
 export const FontScaleBodyLineHeightMultiplier = 0.33; // Line height = fontSize * (1 + this). Used for steps -3 to 2 (micro through subtitle).
 export const FontScaleHeadlineLineHeightMultiplier = 0.2; // Line height = fontSize * (1 + this). Used for steps 3 to 12 (h4 through h1).
