@@ -1,0 +1,85 @@
+{
+  "size": {
+    "padding": {
+      "value": "{size.double}"
+    },
+    "radius_small": {
+      "value": "{size.double}"
+    },
+    "radius": {
+      "value": "{size.triple}"
+    },
+    "padding_large": {
+      "value": "{size.triple}"
+    },
+    "radius_x_small": {
+      "value": "{size.single}"
+    },
+    "padding_small": {
+      "value": "{size.single}"
+    },
+    "divider": {
+      "value": "{size.quarter}",
+      "height": {
+        "value": "{size.divider}"
+      },
+      "height_small": {
+        "value": "{size.divider_thin}"
+      },
+      "width": {
+        "value": "{size.divider}"
+      }
+    },
+    "radius_large": {
+      "value": "{size.quad}"
+    },
+    "radius_x_large": {
+      "value": "{size.quint}"
+    },
+    "divider_thin": {
+      "value": "{size.eighth}"
+    },
+    "padding_x_small": {
+      "value": "{size.semi}"
+    },
+    "padding_x_large": {
+      "value": "{size.quad}"
+    },
+    "radius_xx_large": {
+      "value": "{size.sext}"
+    },
+    "component": {
+      "height": {
+        "value": "{size.sext}"
+      },
+      "height_x_small": {
+        "value": "{size.triple}"
+      },
+      "height_large": {
+        "value": "{size.sept}"
+      },
+      "height_small": {
+        "value": "{size.quint}"
+      }
+    },
+    "border": {
+      "default": {
+        "value": "{size.quarter}"
+      },
+      "thin": {
+        "value": "{size.eighth}"
+      }
+    },
+    "icon": {
+      "default": {
+        "value": "{size.triple}"
+      },
+      "small": {
+        "value": "{size.double}"
+      },
+      "large": {
+        "value": "{size.quad}"
+      }
+    }
+  }
+}
