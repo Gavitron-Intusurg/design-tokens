@@ -223,7 +223,6 @@
   --font-scale-stepMultiplier: 0.125; /** Each step changes font size by this fraction of body size */
   --font-scale-bodyLineHeightMultiplier: 0.33; /** Line height = fontSize * (1 + this). Used for steps -3 to 2 (micro through subtitle). */
   --font-scale-headlineLineHeightMultiplier: 0.2; /** Line height = fontSize * (1 + this). Used for steps 3 to 12 (h4 through h1). */
-  --font-scale-displayLineHeightMultiplier: 0.16; /** Line height = fontSize * (1 + this). Used for steps 13+ (display sizes). */
   --font-size-micro: -3; /** Step -3. Line height category: body */
   --font-size-helper: -2; /** Step -2. Line height category: body */
   --font-size-caption: -1; /** Step -1. Line height category: body */
@@ -233,8 +232,6 @@
   --font-size-h3: 6; /** Step 6. Line height category: headline */
   --font-size-h2: 8; /** Step 8. Line height category: headline */
   --font-size-h1: 10; /** Step 10. Line height category: headline */
-  --font-size-display2: 13; /** Step 13. Line height category: display */
-  --font-size-display1: 23; /** Step 23. Line height category: display */
   --size-base: 1; /** 1 * base */
   --size-semi: 0.5; /** 0.5 * base */
   --size-single: 1; /** 1 * base */
@@ -384,8 +381,11 @@
   --dialog-icon-information: var(--desat-blue-40);
   --dialog-icon-warning: var(--desat-red-40);
   --marker-directPlacementRA-background: var(--pink-30);
+  --marker-object-background-default: var(--gray-10);
   --marker-object-background-disabled: var(--gray-30);
   --marker-object-border-active: var(--cyan-50);
+  --marker-object-border-default: var(--black);
+  --marker-object-border-disabled: var(--gray-80);
   --marker-target-background: var(--teal-40);
   --marker-trajectoryPlacementRA-background: var(--orange-50);
   --notification-icon-caution: var(--desat-yellow-40);
@@ -413,8 +413,6 @@
   --font-typeface-h3: var(--font-family-brown); /** Brown Pro Bold, GT Pressura Mono Regular */
   --font-typeface-h2: var(--font-family-brown); /** Brown Pro Bold, GT Pressura Mono Regular */
   --font-typeface-h1: var(--font-family-brown); /** Brown Pro Bold, GT Pressura Mono Regular */
-  --font-typeface-display2: var(--font-family-brown); /** Brown Pro Bold, GT Pressura Mono Regular */
-  --font-typeface-display1: var(--font-family-brown); /** Brown Pro Bold, GT Pressura Mono Regular */
   --size-padding: var(--size-double);
   --size-radius_small: var(--size-double);
   --size-radius: var(--size-triple);
@@ -466,15 +464,20 @@
   --size-marker-object_height: var(--size-quad);
   --size-marker-handle_height: var(--size-single);
   --size-marker-object_border_thick: var(--size-semi);
-  --button-highContrast-background-active-pressed: var(--background-interactive-pressed);
+  --button-highContrast-background-active: var(--background-interactive-default);
+  --button-highContrast-background-activePressed: var(--background-interactive-pressed);
   --button-highContrast-background-default: var(--background-highContrast-default);
   --button-highContrast-background-disabled: var(--background-lowContrast-disabled-a);
   --button-highContrast-background-pressed: var(--background-highContrast-pressed);
   --button-highContrast-content: var(--content-highContrast-primary);
+  --button-highContrast-contentActive: var(--content-lowContrast-primary);
+  --button-highContrast-contentDisabled: var(--content-lowContrast-disabled-a);
   --button-lowContrast-background-active: var(--background-interactive-default);
   --button-lowContrast-background-disabled: var(--background-lowContrast-disabled-a);
   --button-lowContrast-background-pressed: var(--background-lowContrast-pressed-a);
   --button-lowContrast-content: var(--content-lowContrast-primary);
+  --button-lowContrast-contentActive: var(--content-lowContrast-primary);
+  --button-lowContrast-contentDisabled: var(--content-lowContrast-disabled-a);
   --button-lowContrast-surface-background-pressed: var(--background-interactive-pressed);
   --button-lowContrast-surface-default: var(--background-lowContrast-default-a);
   --card-background-default: var(--background-lowContrast-default-a);
@@ -485,7 +488,12 @@
   --checkbox-content-default: var(--content-lowContrast-primary);
   --checkbox-content-disabled: var(--content-lowContrast-disabled-a);
   --checkbox-icon-default: var(--content-lowContrast-primary);
+  --checkbox-input-background-active-pressed: var(--background-interactive-pressed);
   --checkbox-input-background-default: var(--surface-a);
+  --checkbox-input-background-disabled: var(--background-lowContrast-disabled-a);
+  --checkbox-input-background-pressed: var(--background-lowContrast-pressed-a);
+  --checkbox-input-border-default: var(--border-highContrast-default-a);
+  --checkbox-input-border-disabled: var(--border-highContrast-disabled-a);
   --checkbox-input-border-pressed: var(--border-highContrast-pressed-a);
   --checkbox-input-surface-active: var(--background-highContrast-pressed);
   --dataCard-background-default: var(--background-lowContrast-default-a);
@@ -502,26 +510,60 @@
   --dialog-border-warning: var(--border-warning-c);
   --dialog-content-body: var(--content-lowContrast-secondary);
   --dialog-content-title: var(--content-lowContrast-primary);
+  --dialog-highcontrast-button-background-caution-default: var(--background-highcontrast-caution-a);
   --dialog-highcontrast-button-background-caution-disabled: var(--background-lowcontrast-caution-b);
+  --dialog-highcontrast-button-background-caution-pressed: var(--background-highcontrast-caution-b);
+  --dialog-highcontrast-button-background-information-default: var(--background-highcontrast-informational-a);
+  --dialog-highcontrast-button-background-information-disabled: var(--background-lowcontrast-informational-b);
+  --dialog-highcontrast-button-background-information-pressed: var(--background-highcontrast-informational-b);
+  --dialog-highcontrast-button-background-warning-default: var(--background-highcontrast-warning-a);
+  --dialog-highcontrast-button-background-warning-pressed: var(--background-highcontrast-warning-b);
+  --dialog-highcontrast-button-caution-content-default: var(--content-highContrast-caution-primary);
   --dialog-highcontrast-button-caution-content-disabled: var(--content-highContrast-caution-tertiary);
+  --dialog-highcontrast-button-information-content-default: var(--content-highContrast-informational-primary);
   --dialog-highcontrast-button-information-content-disabled: var(--content-highContrast-informational-tertiary);
   --dialog-highcontrast-button-surface-warning-disabled: var(--background-lowcontrast-warning-b);
+  --dialog-highcontrast-button-warning-content-default: var(--content-highContrast-warning-primary);
   --dialog-highcontrast-button-warning-content-disabled: var(--content-highContrast-warning-tertiary);
+  --dialog-icon-background-caution: var(--background-lowcontrast-caution-b);
+  --dialog-icon-background-information: var(--background-lowcontrast-informational-b);
   --dialog-icon-background-warning: var(--background-lowcontrast-warning-b);
+  --dialog-lowcontrast-button-background-caution-default: var(--background-lowcontrast-caution-c);
+  --dialog-lowcontrast-button-background-caution-disabled: var(--background-lowcontrast-caution-b);
+  --dialog-lowcontrast-button-background-caution-pressed: var(--background-lowcontrast-caution-d);
+  --dialog-lowcontrast-button-background-information-default: var(--background-lowcontrast-informational-c);
+  --dialog-lowcontrast-button-background-information-disabled: var(--background-lowcontrast-informational-b);
+  --dialog-lowcontrast-button-background-information-pressed: var(--background-lowcontrast-informational-d);
+  --dialog-lowcontrast-button-background-warning-default: var(--background-lowcontrast-warning-c);
   --dialog-lowcontrast-button-background-warning-disabled: var(--background-lowcontrast-warning-b);
+  --dialog-lowcontrast-button-background-warning-pressed: var(--background-lowcontrast-warning-d);
+  --dialog-lowcontrast-button-caution-content-default: var(--content-lowContrast-caution-primary);
   --dialog-lowcontrast-button-caution-content-disabled: var(--content-highContrast-caution-tertiary);
+  --dialog-lowcontrast-button-information-content-default: var(--content-lowContrast-informational-primary);
   --dialog-lowcontrast-button-information-content-disabled: var(--content-highContrast-informational-tertiary);
+  --dialog-lowcontrast-button-warning-content-default: var(--content-lowContrast-warning-primary);
   --dialog-lowcontrast-button-warning-content-disabled: var(--content-highContrast-warning-tertiary);
   --divider-background: var(--background-lowContrast-default-a);
+  --dropdown-helper-content-default: var(--content-lowContrast-secondary);
   --dropdown-helper-content-disabled: var(--content-lowContrast-disabled-a);
+  --dropdown-input-background-default: var(--background-lowContrast-default-a);
   --dropdown-input-background-disabled: var(--background-lowContrast-disabled-a);
+  --dropdown-input-background-pressed: var(--background-lowContrast-pressed-a);
   --dropdown-input-border-focus: var(--border-interactive);
+  --dropdown-input-content-default: var(--content-lowContrast-tertiary);
+  --dropdown-input-content-disabled: var(--content-lowContrast-disabled-a);
   --dropdown-input-content-selected: var(--content-lowContrast-primary);
+  --dropdown-input-icon-default: var(--content-lowContrast-primary);
   --dropdown-input-icon-disabled: var(--content-lowContrast-disabled-a);
+  --dropdown-label-content-default: var(--content-lowContrast-primary);
   --dropdown-label-content-disabled: var(--content-lowContrast-disabled-a);
+  --dropdown-menuOption-background-default: var(--background-lowContrast-default-a);
   --dropdown-menuOption-background-disabled: var(--background-lowContrast-disabled-a);
+  --dropdown-menuOption-background-pressed: var(--background-lowContrast-pressed-a);
+  --dropdown-menuOption-content-default: var(--content-lowContrast-primary);
   --dropdown-menuOption-content-disabled: var(--content-lowContrast-disabled-a);
   --dropdown-menu-background: var(--background-lowContrast-default-a);
+  --dropdown-menu-scrollbar-background-default: var(--background-lowContrast-default-b);
   --dropdown-menu-scrollbar-background-pressed: var(--background-lowContrast-pressed-b);
   --globalBar-button-border: var(--background-lowContrast-default-a);
   --globalBar-content-primary: var(--content-lowContrast-primary);
@@ -536,10 +578,23 @@
   --notification-border-warning: var(--border-warning-c);
   --notification-content-body: var(--content-lowContrast-secondary);
   --notification-content-title: var(--content-lowContrast-primary);
+  --notification-icon-background-caution: var(--background-lowcontrast-caution-b);
+  --notification-icon-background-information: var(--background-lowcontrast-informational-b);
   --notification-icon-background-warning: var(--background-lowcontrast-warning-b);
+  --notification-lowcontrast-button-background-caution-default: var(--background-lowcontrast-caution-c);
+  --notification-lowcontrast-button-background-caution-disabled: var(--background-lowcontrast-caution-b);
+  --notification-lowcontrast-button-background-caution-pressed: var(--background-lowcontrast-caution-d);
+  --notification-lowcontrast-button-background-information-default: var(--background-lowcontrast-informational-c);
+  --notification-lowcontrast-button-background-information-disabled: var(--background-lowcontrast-informational-b);
+  --notification-lowcontrast-button-background-information-pressed: var(--background-lowcontrast-informational-d);
+  --notification-lowcontrast-button-background-warning-default: var(--background-lowcontrast-warning-c);
   --notification-lowcontrast-button-background-warning-disabled: var(--background-lowcontrast-warning-b);
+  --notification-lowcontrast-button-background-warning-pressed: var(--background-lowcontrast-warning-d);
+  --notification-lowcontrast-button-caution-content-default: var(--content-lowContrast-caution-primary);
   --notification-lowcontrast-button-caution-content-disabled: var(--content-highContrast-caution-tertiary);
+  --notification-lowcontrast-button-information-content-default: var(--content-lowContrast-informational-primary);
   --notification-lowcontrast-button-information-content-disabled: var(--content-highContrast-informational-tertiary);
+  --notification-lowcontrast-button-warning-content-default: var(--content-lowContrast-warning-primary);
   --notification-lowcontrast-button-warning-content-disabled: var(--content-highContrast-warning-tertiary);
   --panel-surface: var(--surface-a);
   --popover-background: var(--background-lowContrast-default-a);
@@ -548,13 +603,17 @@
   --progressbar-background-active: var(--background-interactive-default);
   --progressbar-background-track: var(--background-lowContrast-default-a);
   --progressbar-content: var(--content-lowContrast-secondary);
+  --radioButton-_input-background-active-default: var(--background-highContrast-default);
   --radioButton-_input-background-active-disabled: var(--content-lowContrast-disabled-a);
+  --radioButton-_input-background-active-pressed: var(--background-highContrast-pressed);
   --radioButton-_input-background-default: var(--surface-a);
   --radioButton-_input-background-disabled: var(--background-lowContrast-disabled-a);
   --radioButton-_input-background-pressed: var(--background-lowContrast-pressed-a);
   --radioButton-_input-border-default: var(--border-highContrast-default-a);
   --radioButton-_input-border-disabled: var(--border-highContrast-disabled-a);
   --radioButton-_input-border-pressed: var(--border-highContrast-pressed-a);
+  --radioButton-content-disabled: var(--content-lowContrast-disabled-a);
+  --radioButton-content-primary: var(--content-lowContrast-primary);
   --radioButton-content-secondary: var(--content-lowContrast-secondary);
   --rotationSlider-background-default: var(--background-lowContrast-default-e);
   --rotationSlider-background-disabled: var(--background-lowContrast-default-e);
@@ -565,8 +624,14 @@
   --rotationSlider-tick-disabled: var(--content-lowContrast-disabled-a);
   --rotationSlider-tick-pressed: var(--content-lowContrast-tertiary);
   --segmentedControl-background: var(--background-lowContrast-default-a);
+  --segmentedControl-item-background-active-default: var(--background-interactive-default);
   --segmentedControl-item-background-active-disabled: var(--background-highContrast-disabled-a);
-  --segmentedControl-item-content-disabled: var(--content-highContrast-disabled-a);
+  --segmentedControl-item-background-active-pressed: var(--background-interactive-pressed);
+  --segmentedControl-item-background-default: var(--background-lowContrast-default-a);
+  --segmentedControl-item-background-disabled: var(--background-lowContrast-disabled-a);
+  --segmentedControl-item-background-pressed: var(--background-lowContrast-pressed-a);
+  --segmentedControl-item-content: var(--content-lowContrast-primary);
+  --segmentedControl-item-contentDisabled: var(--content-highContrast-disabled-a);
   --sliceSlider-background-default: var(--background-lowContrast-default-e);
   --sliceSlider-background-disabled: var(--background-lowContrast-default-e);
   --sliceSlider-background-pressed: var(--background-lowContrast-pressed-a);
@@ -577,6 +642,8 @@
   --sliceSlider-tick-disabled: var(--content-lowContrast-disabled-a);
   --sliceSlider-tick-pressed: var(--content-lowContrast-tertiary);
   --slider-activeBar-background-default: var(--background-interactive-default);
+  --slider-activeBar-background-disabled: var(--background-highContrast-disabled-a);
+  --slider-activeBar-background-pressed: var(--background-interactive-pressed);
   --slider-content-default: var(--content-lowContrast-primary);
   --slider-content-disabled: var(--content-highContrast-disabled-a);
   --slider-handle-disabled: var(--content-highContrast-disabled-a);
@@ -596,21 +663,31 @@
   --stepper-background-disabled: var(--background-lowContrast-disabled-a);
   --stepper-background-pressed: var(--background-lowContrast-pressed-a);
   --stepper-content: var(--content-lowContrast-primary);
+  --stepper-contentDisabled: var(--content-lowContrast-disabled-a);
   --switch-background-default: var(--background-lowContrast-default-a);
   --switch-background-disabled: var(--background-lowContrast-disabled-a);
   --switch-background-pressed: var(--background-lowContrast-pressed-a);
-  --switch-background-toggle-pressed: var(--background-interactive-pressed);
+  --switch-background-toggle: var(--background-interactive-default);
+  --switch-background-togglePressed: var(--background-interactive-pressed);
   --switch-handle-default: var(--content-lowContrast-primary);
   --switch-handle-disabled: var(--content-lowContrast-disabled-a);
+  --textInput-helper-content-default: var(--content-lowContrast-secondary);
   --textInput-helper-content-disabled: var(--content-lowContrast-disabled-a);
+  --textInput-input-background-default: var(--background-lowContrast-default-a);
   --textInput-input-background-disabled: var(--background-lowContrast-disabled-a);
+  --textInput-input-background-pressed: var(--background-lowContrast-pressed-a);
   --textInput-input-border: var(--border-interactive);
+  --textInput-input-content-default: var(--content-lowContrast-tertiary);
   --textInput-input-content-disabled: var(--content-lowContrast-disabled-a);
+  --textInput-input-content-selected: var(--content-lowContrast-primary);
   --viewBox-banner-background: var(--background-lowContrast-default-e);
   --viewBox-banner-border-caution: var(--border-caution-b);
+  --viewBox-banner-border-information: var(--border-lowContrast-default-b);
   --viewBox-banner-content-caution: var(--content-lowContrast-caution-primary);
+  --viewBox-banner-content-information: var(--content-lowContrast-primary);
   --viewBox-border-default: var(--border-lowContrast-default-a);
   --viewBox-border-divAssist: var(--border-interactive);
+  --viewBox-status-banner-background-divAssist: var(--background-interactive-default);
   --viewBox-status-banner-content-divAssist: var(--content-lowContrast-primary);
   --workflowPanel-content-primary: var(--content-lowContrast-primary);
   --workflowPanel-divider-scroll: var(--border-lowContrast-default-a);

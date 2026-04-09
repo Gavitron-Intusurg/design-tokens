@@ -4,7 +4,11 @@ function classifyToken(token) {
   const [category] = token.path;
   if (category === CATEGORY.COLOR) return "color";
   if (category === CATEGORY.FONT) {
-    if (token.path.includes("scale") || token.path.includes("size") || token.path.includes("lineHeight")) {
+    if (
+      token.path.includes("scale") ||
+      token.path.includes("size") ||
+      token.path.includes("lineHeight")
+    ) {
       return "numeric";
     }
     return "string";
@@ -37,7 +41,9 @@ function buildName(token, separator, transform) {
 function toCamelCase(str) {
   return str
     .split(/[-_/]/)
-    .map((part, i) => (i === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)))
+    .map((part, i) =>
+      i === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1),
+    )
     .join("");
 }
 
@@ -89,6 +95,45 @@ function sortTokens(tokens) {
   });
 }
 
+// Reorder desat paths: ["desat","blue","10"] -> ["blue","10","desat"]
+function reorderDesat(segments) {
+  if (segments[0] === "desat") {
+    return [...segments.slice(1), "desat"];
+  }
+  return segments;
+}
+
+// Build a camelCase property name for QML from token path (strip "color" prefix)
+function qmlPropertyName(token) {
+  const path = reorderDesat(stripColorPrefix(token.path));
+  return path
+    .map((seg, i) => {
+      const s = seg.replace(/[-_]/g, "");
+      return i === 0 ? s : s.charAt(0).toUpperCase() + s.slice(1);
+    })
+    .join("");
+}
+
+// Check if a token is a primitive (has a literal hex value, not a reference)
+function isPrimitive(token) {
+  const orig = token.original || token;
+  return typeof orig.value === "string" && orig.value.startsWith("#");
+}
+
+// Resolve a reference like "{color.blue.50}" to a QML property name
+function refToQmlName(ref) {
+  const inner = ref.replace(/[{}]/g, "");
+  const parts = inner.split(".");
+  // Strip leading "color", reorder desat
+  const stripped = reorderDesat(parts[0] === "color" ? parts.slice(1) : parts);
+  return stripped
+    .map((seg, i) => {
+      const s = seg.replace(/[-_]/g, "");
+      return i === 0 ? s : s.charAt(0).toUpperCase() + s.slice(1);
+    })
+    .join("");
+}
+
 const cppRenderers = {
   color: (name, value) => `inline const QColor ${name} = QColor("${value}");`,
   numeric: (name, value) => `constexpr double ${name} = ${value};`,
@@ -120,6 +165,57 @@ export default {
       },
     },
     formats: {
+      "qml/singleton": function ({ dictionary }) {
+        const colorTokens = dictionary.allTokens.filter(
+          (t) => classifyToken(t) === "color",
+        );
+        const sorted = sortTokens(colorTokens);
+
+        // Split into primitives and aliases
+        const primitives = [];
+        const aliases = [];
+        for (const token of sorted) {
+          if (isPrimitive(token)) {
+            primitives.push(token);
+          } else {
+            aliases.push(token);
+          }
+        }
+
+        const lines = [
+          "pragma Singleton",
+          "import QtQuick 2.15",
+          "",
+          "QtObject {",
+          "",
+          "    // --- Primitive colors ---",
+        ];
+
+        for (const token of primitives) {
+          const name = qmlPropertyName(token);
+          lines.push(`    readonly property color ${name}: "${token.value}"`);
+        }
+
+        lines.push("");
+        lines.push("    // --- Alias & component colors ---");
+
+        for (const token of aliases) {
+          const name = qmlPropertyName(token);
+          const orig = token.original || token;
+          // Use property reference if it's a token ref, otherwise hex
+          if (typeof orig.value === "string" && orig.value.startsWith("{")) {
+            lines.push(
+              `    readonly property color ${name}: ${refToQmlName(orig.value)}`,
+            );
+          } else {
+            lines.push(`    readonly property color ${name}: "${token.value}"`);
+          }
+        }
+
+        lines.push("}");
+        lines.push("");
+        return lines.join("\n");
+      },
       "cpp/header": function ({ dictionary }) {
         const lines = [
           "#pragma once",
@@ -214,6 +310,16 @@ export default {
         {
           destination: "tokens.h",
           format: "cpp/header",
+        },
+      ],
+    },
+    qml: {
+      transformGroup: "js",
+      buildPath: "build/qml/",
+      files: [
+        {
+          destination: "TokenColors.qml",
+          format: "qml/singleton",
         },
       ],
     },
