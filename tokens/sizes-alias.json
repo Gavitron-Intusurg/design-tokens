@@ -79,6 +79,9 @@
       },
       "large": {
         "value": "{size.quad}"
+      },
+      "xLarge": {
+        "value": "{size.quint}"
       }
     }
   }
